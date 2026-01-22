@@ -1,0 +1,16 @@
+<h3>Seat Selection</h3>
+
+<div>
+  <button
+    *ngFor="let seat of seats"
+    (click)="toggleSeat(seat)"
+    [ngStyle]="{
+      'background-color': selectedSeats.includes(seat) ? 'green' : 'lightgray',
+      'margin': '5px'
+    }"
+  >
+    {{ seat }}
+  </button>
+</div>
+
+<p>Selected Seats: {{ selectedSeats.join(', ') }}</p>

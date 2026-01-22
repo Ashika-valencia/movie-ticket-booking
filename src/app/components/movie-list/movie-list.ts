@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-movie-list',
-  standalone: false,
+  standalone: true,
   templateUrl: './movie-list.html',
-  styleUrl: './movie-list.css',
+  styleUrls: ['./movie-list.css']
 })
 export class MovieList {
 

@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-showtime-list',
-  standalone: false,
+  standalone: true,
   templateUrl: './showtime-list.html',
-  styleUrl: './showtime-list.css',
+  styleUrls: ['./showtime-list.css']
 })
 export class ShowtimeList {
 
